@@ -1,14 +1,13 @@
 name: Generate Podcast Feeds
+
 on: [push]
+
 jobs:
-    build:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Checkout Repo
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
         uses: actions/checkout@v5
-        - name: Run Feed Generator
-        uses: davidniin/gitthub-actions-podcast-generator@main
-          
-      
-            
-           
+
+      - name: Run Feed Generator
+        uses: davidniin/github-actions-podcast-generator@main
